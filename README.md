@@ -58,13 +58,15 @@ func drawPlayableArea() {
 
  You did everything correct if there is a red rectangle filling the device's border for any device. Take a look at the following screenshots on how the red rectangle (playable area) adjusts itself to any size. Also note how the HP and score labels are still positioned in the right places.
 
-#### iPhone 5
+### iPhone 5
  ![iPhone5](Screenshots/iPhone 5.png)
 
- #### iPhone 6 Plus
+### iPhone 6 Plus
+
  ![iPhone6Plus](Screenshots/iPhone 6 Plus.png)
 
- #### iPad Air 2
+### iPad Air 2
+
  ![iPadAir2](Screenshots/iPad Air 2.png)
 
 ### 4. How to Position Nodes
