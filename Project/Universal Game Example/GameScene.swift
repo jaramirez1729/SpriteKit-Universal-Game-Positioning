@@ -34,7 +34,7 @@ class GameScene: SKScene {
         background.position = CGPoint(x: JKGame.rect.midX, y: JKGame.rect.midY)
         background.zPosition = -10
         addChild(background)
-        
+
         //Positions the object to the top right
         scoreLabel.position = CGPoint(x: JKGame.rect.maxX - 35, y: JKGame.rect.maxY - 90)
         scoreLabel.horizontalAlignmentMode = .right
