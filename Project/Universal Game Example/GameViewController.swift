@@ -14,8 +14,8 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Fits the max size of an iPad. This allows it to fit even the biggest devices
-        let scene = GameScene(size: CGSize(width: 2048, height: 1536))
+        JKGame.game.setOrientation(JKOrientation.landscape)
+        let scene = GameScene(size: JKGame.size)
         scene.scaleMode = .aspectFill
 
         let skView = self.view as! SKView
@@ -24,10 +24,6 @@ class GameViewController: UIViewController {
         skView.ignoresSiblingOrder = true
         
         skView.presentScene(scene)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
     
     override var prefersStatusBarHidden: Bool {

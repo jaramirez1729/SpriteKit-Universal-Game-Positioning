@@ -13,6 +13,7 @@
 		4E26D7461D62976300C972AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E26D7441D62976300C972AF /* Main.storyboard */; };
 		4E26D7481D62976300C972AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E26D7471D62976300C972AF /* Assets.xcassets */; };
 		4E26D74B1D62976300C972AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E26D7491D62976300C972AF /* LaunchScreen.storyboard */; };
+		4ED4584E20A6C1EF002F3B45 /* JKGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4584D20A6C1EF002F3B45 /* JKGame.swift */; };
 		9A0B52911D6438AE00AD3A9D /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A0B52901D6438AD00AD3A9D /* Background.png */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		4E26D7471D62976300C972AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E26D74A1D62976300C972AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E26D74C1D62976300C972AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ED4584D20A6C1EF002F3B45 /* JKGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKGame.swift; sourceTree = "<group>"; };
 		9A0B52901D6438AD00AD3A9D /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +62,7 @@
 			children = (
 				9AEF8AFD1D642634001D8D20 /* Resources */,
 				4E26D7401D62976300C972AF /* GameScene.swift */,
+				4ED4584D20A6C1EF002F3B45 /* JKGame.swift */,
 				4E26D7421D62976300C972AF /* GameViewController.swift */,
 				9AEF8AFC1D64262E001D8D20 /* Supporting */,
 			);
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED4584E20A6C1EF002F3B45 /* JKGame.swift in Sources */,
 				4E26D7411D62976300C972AF /* GameScene.swift in Sources */,
 				4E26D7431D62976300C972AF /* GameViewController.swift in Sources */,
 				4E26D73D1D62976300C972AF /* AppDelegate.swift in Sources */,
