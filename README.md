@@ -21,8 +21,8 @@ With the following code in the next sections, you will be able to program the re
 These variables are used to calculate the size of the rectangle later. You can declare them as global variables if you want, but what is important is that the __playableArea__ variable is accessible across all scenes, so that particular variable must be global.
 
 ```
-var deviceWidth = UIScreen.mainScreen().bounds.width
-var deviceHeight = UIScreen.mainScreen().bounds.height
+var deviceWidth = UIScreen.main.bounds.width
+var deviceHeight = UIScreen.main.bounds.height
 var playableArea: CGRect!
 ```
 
