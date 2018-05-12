@@ -10,8 +10,8 @@ import SpriteKit
 
 
 //Used to get the ratio of the device for later calculation
-var deviceWidth = UIScreen.mainScreen().bounds.width
-var deviceHeight = UIScreen.mainScreen().bounds.height
+var deviceWidth = UIScreen.main.bounds.width
+var deviceHeight = UIScreen.main.bounds.height
 var playableArea: CGRect!
 
 
@@ -27,9 +27,8 @@ class GameScene: SKScene {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
-    override func didMoveToView(view: SKView) {
+
+    override func didMove(to view: SKView) {
         //Creates a retangle for the view
         let maxAspectRatio: CGFloat = deviceWidth / deviceHeight
         let playableHeight = size.width / maxAspectRatio
@@ -50,25 +49,24 @@ class GameScene: SKScene {
         
         //Positions the object to the top right
         scoreLabel.position = CGPoint(x: playableArea.maxX - 35, y: playableArea.maxY - 90)
-        scoreLabel.horizontalAlignmentMode = .Right
+        scoreLabel.horizontalAlignmentMode = .right
         scoreLabel.fontSize = 80
         scoreLabel.fontName = "Georgia-Bold"
         addChild(scoreLabel)
 
         //Positions the object to the top left
         HPLabel.position = CGPoint(x: playableArea.minX + 35, y: playableArea.maxY - 90)
-        HPLabel.horizontalAlignmentMode = .Left
+        HPLabel.horizontalAlignmentMode = .left
         HPLabel.fontSize = scoreLabel.fontSize
         HPLabel.fontName = scoreLabel.fontName
         addChild(HPLabel)
     }
     
-    
     //Test: Draws the playable area or the viewable area that the user can see
     func drawPlayableArea() {
         let area = SKShapeNode(rect: playableArea)
         area.lineWidth = 20
-        area.strokeColor = SKColor.redColor()
+        area.strokeColor = SKColor.red
         addChild(area)
         print(area)
     }
@@ -76,7 +74,7 @@ class GameScene: SKScene {
     func drawiPhone5SFrame() {
         let area = SKShapeNode(rect: CGRect(x: -10, y: 180, width: 2069, height: 1175))
         area.lineWidth = 10
-        area.strokeColor = SKColor.orangeColor()
+        area.strokeColor = SKColor.orange
         addChild(area)
     }
 }

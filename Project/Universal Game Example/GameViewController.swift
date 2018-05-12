@@ -16,7 +16,7 @@ class GameViewController: UIViewController {
         
         //Fits the max size of an iPad. This allows it to fit even the biggest devices
         let scene = GameScene(size: CGSize(width: 2048, height: 1536))
-        scene.scaleMode = .AspectFill
+        scene.scaleMode = .aspectFill
 
         let skView = self.view as! SKView
         skView.showsFPS = true
@@ -29,8 +29,8 @@ class GameViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-    override func prefersStatusBarHidden() -> Bool {
+    
+    override var prefersStatusBarHidden: Bool {
         return true
     }
 }
